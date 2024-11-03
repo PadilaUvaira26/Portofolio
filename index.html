@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigasi -->
+    <nav>
+      <h1>Portofolio</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Halaman Beranda -->
+    <section id="home" class="home">
+        <h1>Hi, I'm Padila Uvaira</h1>
+        <p>Welcome to my Portofolio!</p>
+        <img src="assets/dd.png" alt="Your Photo" class="profile-photo">
+    </section>
+
+    <!-- Halaman Tentang -->
+    <section id="about" class="about">
+        <h1>About Me</h1>
+        <p>I am a student who is very interested in the field of IT,
+            especially web development and design. I always want to
+            learn new technologies and improve my skills in this field.</p>
+            
+        <p>In addition to technical expertise, I have excellent 
+            communication skills and thrive in a collaborative environment.
+            My experience in organizations has equipped me with strong 
+            interpersonal and leadership skills. I am confident that these
+            skills will prove invaluable in my future career.</p>
+
+        <h2><strong>Education</strong></h2>
+        <p>Bachelor of Informatics Engineering, Malikussaleh University (2022-Now)</p> 
+    </section>
+
+    <!-- Halaman Skills -->
+    <section id="skills" class="skills">
+      <h2>My Skills</h2>
+      <div class="section-box">
+        <div class="box">
+          <div class="image-box">
+            <img src="assets/MySQL.png" alt="">
+          </div>
+          <div class="name-box">MySQL</div>
+        </div>
+        <div class="box">
+          <div class="image-box">
+            <img src="assets/css.png" alt="">
+          </div>
+          <div class="name-box">CSS</div>
+        </div>
+        <div class="box">
+          <div class="image-box">
+            <img src="assets/Javascript.png" alt="">
+          </div>
+          <div class="name-box">JavaScript</div>
+        </div>
+        <div class="box">
+          <div class="image-box">
+            <img src="assets/C++.png" alt="">
+          </div>
+          <div class="name-box">C++</div>
+        </div>
+        <div class="box">
+          <div class="image-box">
+            <img src="assets/html.png" alt="">
+          </div>
+          <div class="name-box">HTML</div>
+        </div>
+        <div class="box">
+          <div class="image-box">
+            <img src="assets/Figma.png" alt="">
+          </div>
+          <div class="name-box">Figma</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Halaman Kontak -->
+    <section id="contact" class="contact">
+        <h1>Contact Me</h1>
+        <form action="#" method="post" id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Padila. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">LinkedIn</a> | 
+            <a href="#">GitHub</a> | 
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>

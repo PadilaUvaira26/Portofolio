@@ -1,0 +1,270 @@
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mengatur font dasar dan warna latar belakang */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e0f7fa; /* Light teal background */
+    color: #333;
+}
+
+/* Navigasi */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00796b;
+    padding: 10px 15px; /* Mengurangi padding */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Menjaga agar navbar tetap di atas elemen lainnya */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Mengurangi efek bayangan */
+    text-align: center;
+    width: 100%;
+  }
+
+nav h1 {
+    color: #FFFFFF;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    display: inline; /* Mengatur agar judul navbar tidak mengganggu menu */
+    margin-right: 20px; /* Ruang antara judul dan menu */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav li {
+    font-size: 18px;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #b2dfdb; /* Changed to the specified color */
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 14px; /* Mengurangi ukuran font */
+    color: white; /* Mengatur warna teks */
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.1); /* Efek hover */
+}
+
+/* Halaman Beranda */
+.home {
+    height: 100vh; /* Mengatur tinggi section home menjadi 100% dari viewport */
+    display: flex; /* Menggunakan flexbox untuk memusatkan konten */
+    flex-direction: column; /* Mengatur arah konten ke kolom */
+    justify-content: center; /* Memusatkan konten secara vertikal */
+    align-items: center; /* Memusatkan konten secara horizontal */
+    background-color: #b2dfdb; /* Ganti dengan warna latar belakang yang diinginkan */
+    color: #00796b;
+    text-align: center; /* Memusatkan teks */
+}
+
+.home h1 {
+    font-size: 2.5rem; /* Make the heading larger */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.home p {
+    font-size: 1.2rem; /* Set a slightly larger font for the paragraph */
+    margin-bottom: 40px; /* Add space below the paragraph */
+}
+
+.home .profile-photo {
+    width: 300px; /* Atur lebar sesuai kebutuhan */
+    height: auto; /* Memastikan proporsi tetap terjaga */
+    border-radius: 50%; /* Menjadikan foto berbentuk bulat (opsional) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan pada foto (opsional) */
+}
+
+/* Halaman Tentang */
+.about {
+    padding-top: 10rem; /* Atau sesuaikan dengan tinggi navbar Anda */
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    border-radius: 8px; 
+    max-width: 800px; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    font-family: 'Arial', sans-serif; 
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 100vh; /* Full viewport height */
+    padding: 20px; /* Add some padding */
+    text-align: center;
+}
+
+
+.about h1 {
+    font-size: 2.4rem; /* Font size for headings */
+    color: #00796b; /* Teal color for headings */
+    margin-bottom: 10px; /* Space below heading */
+    padding-bottom: 5px; /* Space between text and underline */
+    text-align: center; /* Center-align text */
+}
+
+.about h2{
+    font-size: 1.5rem; /* Font size for headings */
+    color: #00796b; /* Teal color for headings */
+    margin-bottom: 10px; /* Space below heading */
+    padding-bottom: 5px; /* Space between text and underline */
+    text-align: center; /* Center-align text */
+}
+
+.about p {
+    font-size: 16px; /* Font size for paragraphs */
+    line-height: 1.6; /* Better line spacing for readability */
+    color: #555; /* Slightly lighter color for paragraph text */
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+
+/* Halaman Keterampilan */
+.skills {
+    padding-top: 7rem;
+    background-color: #b2dfdb; /* Light teal background for the skills section */
+    padding: 50px 0; /* Top and bottom padding */
+    text-align: center; /* Center-align text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2.5em; /* Larger font for the heading */
+    margin-bottom: 30px; /* Space below the heading */
+    color: #00796b; /* Teal color for the heading */
+}
+
+.section-box {
+    display: flex; /* Flexbox layout for the skill boxes */
+    justify-content: center; /* Center-align boxes */
+    flex-wrap: wrap; /* Wrap boxes on smaller screens */
+}
+
+.box {
+    background: #fff; /* White background for each skill box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 15px; /* Space between boxes */
+    padding: 20px; /* Padding inside the box */
+    text-align: center; /* Center text within each box */
+    width: 150px; /* Fixed width for each box */
+    transition: transform 0.2s; /* Smooth transform transition */
+}
+
+.box:hover {
+    transform: scale(1.05); /* Slightly enlarge box on hover */
+}
+
+.image-box img {
+    width: 100px; /* Fixed size for images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.name-box {
+    font-size: 1.2em; /* Font size for skill name */
+    color: #555; /* Medium gray color for skill name */
+}
+
+/* Halaman Kontak */
+.contact {
+    padding-top: 7rem;
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 20px; /* Spacing inside the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Maximum width for the contact form */
+    margin: 20px auto; /* Center the section on the page */
+    
+}
+
+.contact h1 {
+    text-align: center; /* Center the header text */
+    font-size: 2em; /* Larger font size for visibility */
+    color: #00796b; /* Teal color for the header */
+}
+
+.contact label {
+    display: block; /* Make labels block elements for proper spacing */
+    margin-top: 15px; /* Space above each label */
+    font-weight: bold; /* Make the label text bold */
+    color: #555; /* Slightly lighter color for labels */
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%; /* Full width input fields */
+    padding: 10px; /* Inner spacing */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+    margin-top: 5px; /* Space below each input field */
+    font-size: 1em; /* Font size for input */
+}
+
+.contact button {
+    margin-top: 15px; /* Space above the button */
+    padding: 10px 15px; /* Inner spacing for button */
+    background-color: #00796b; /* Darker teal color for the button */
+    color: white; /* Text color for button */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Font size for button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.contact button:hover {
+    background-color: #00332a; /* Darker shade on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #00796b; /* Teal color */
+    color: #fff; /* White text */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Vertical padding */
+    position: relative; /* For positioning if needed */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+}
+
+.social-links {
+    margin-top: 10px; /* Space between text and social links */
+}
+
+.social-links a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Space between links */
+}
+
+.social-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #b2dfdb; /* Light teal on hover */
+}
